@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  tomcat:
+    max-threads: 600
+  servlet:
+    context-path: /simple-auth
+    session:
+      cookie:
+        name: AUTHSESSION
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaque-token:
+          introspection-uri: https://oauth.magticom.ge/auth/oauth/check_token
+          client-id: SimpleAuthClient
+          client-secret: secret
