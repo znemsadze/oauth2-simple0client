@@ -15,4 +15,6 @@ public class ResultDto {
 
     private List<String> items;
 
+    private List<String> attributes;
+
 }

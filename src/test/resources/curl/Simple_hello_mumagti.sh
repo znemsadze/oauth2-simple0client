@@ -1,6 +1,6 @@
 #!/bin/bash
 id=$1
-result=$(curl -s --user SimpleAuthClient:secret -X POST "https://oauth.magticom.ge/auth/oauth/token?grant_type=password&username=599443000&password=xxxxxx&client_id=SimpleAuthClient" )
+result=$(curl -s --user SimpleAuthClient:secret -X POST "https://oauth.magticom.ge/auth/oauth/token?grant_type=password&username=xxxxx&password=xxxxxx&client_id=SimpleAuthClient" )
 
 token=$(echo "$result" | jq -r '.access_token')
 echo $token
